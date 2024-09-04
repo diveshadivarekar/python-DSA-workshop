@@ -15,6 +15,12 @@ class Stack:
         else:
             return None
         
+    def peek(self):
+        if not self.is_empty():
+            return self.items[-1]
+        else:
+            return None
+        
     def __str__(self):
         return str(self.items)
     
@@ -26,6 +32,7 @@ s.push(2)
 s.push(3)
 
 print('stack items are : ', s)
-s.pop()
+print(s.pop())
+print(s.peek())
 
 print('stack items are : ', s)
