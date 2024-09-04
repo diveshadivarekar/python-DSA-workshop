@@ -1,4 +1,3 @@
-
 class Stack:
     def __init__(self):
         self.items = []
@@ -24,15 +23,16 @@ class Stack:
     def __str__(self):
         return str(self.items)
     
+    
 #main code
+if __name__ == '__main__':
+    s = Stack()
+    s.push(1)
+    s.push(2)
+    s.push(3)
 
-s = Stack()
-s.push(1)
-s.push(2)
-s.push(3)
+    print('stack items are : ', s)
+    print(s.pop())
+    print(s.peek())
 
-print('stack items are : ', s)
-print(s.pop())
-print(s.peek())
-
-print('stack items are : ', s)
+    print('stack items are : ', s)
